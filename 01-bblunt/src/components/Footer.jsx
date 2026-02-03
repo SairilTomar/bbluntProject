@@ -9,6 +9,9 @@ import { GoPlus } from "react-icons/go";
 import { FaApple } from "react-icons/fa";
 import { IoLogoGooglePlaystore } from "react-icons/io5";
 import { TiTick } from "react-icons/ti";
+import { MdOutlineLocalShipping } from "react-icons/md";
+import { IoCheckmarkDoneCircleOutline } from "react-icons/io5";
+import { IoMdCash } from "react-icons/io";
 
 
 const Footer = () => {
@@ -179,7 +182,7 @@ const Footer = () => {
 
 <div className='pt-6'>
 
-<div className='block md:hidden bg-black text-white p-6 h-200'>
+<div className='block md:hidden bg-black text-white p-6 h-250'>
   <div className='p-2'>
 
     <div className='text-medium text-white text-[17px]'>
@@ -291,26 +294,32 @@ Google Play
     </div>
   </div>
 
-  <div className='pt-2'>
-    <div className='pb-4'>
+  <div className='pt-4'>
+    <div className='pb-0'>
       <hr className='text-gray-400'> 
       </hr>
     </div>
-   <div className='flex flex-row justify-between'>
-     <div>
-    Free Shipping</div>
-     <div>
-    Easy Return </div>
-     <div>
-    COD Available</div>
+   <div className='flex flex-row justify-between pt-5 pb-5'>
+     <div className='flex flex-col gap-3'>
+      <div className='pl-9'><MdOutlineLocalShipping className='' size={35}/></div>
+    <div>Free Shipping</div>
+    </div>
+     <div className='flex flex-col gap-3'>
+      <div className='pl-9'><IoCheckmarkDoneCircleOutline className='' size={35}/></div>
+    <div>Easy Return</div>
+    </div>
+    <div className='flex flex-col gap-3'>
+      <div className='pl-9'><IoMdCash className='' size={35}/></div>
+    <div>COD Availabe</div>
+    </div>
    </div>
     </div>
 <div>
-  <div className='pt-20 text-gray-400'>
+  <div className='pt-2 text-gray-400'>
     <hr>
     </hr>
   </div>
-   <div className='flex flex-col gap-5 pt-6'> 
+   <div className='flex flex-col gap-5 pt-5'> 
              
                     <div className="flex gap-2 pl-2">
                          <div className="w-8 h-8 rounded-full border border-white

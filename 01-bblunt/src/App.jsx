@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
@@ -14,12 +14,14 @@ import Footer from './components/Footer'
 import Footer2 from './components/Footer2'
 import FooterFixed from './components/FooterFixed'
 
+
 function App() {
-  const [count, setCount] = useState(0)
+  
 
   return (
     <div className='w-full'>
     <Header />
+
     <HeroPage />
     <OfferBanner />
     <HurryUp />
