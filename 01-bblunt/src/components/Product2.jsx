@@ -71,22 +71,24 @@ const Product2 = () => {
     ]
   return (
     <div className='grid grid-cols-2 
-    
+    sm:grid-cols-2 
     lg:grid-cols-4 gap-0 lg:gap-4 pt-14 lg:pt-4 lg:px-25'>
-       {list.map((item) =>(
+       {list.slice(0,2).map((item) =>(
         <div className='border-0 lg:border-[1px] rounded-lg p-2 border-gray-200'>
             <div className='relative overflow-hidden 
             rounded-lg group'>
 
                 <img src={item.image}
-                 className='w-full h-60 transition duration-[3000ms]
+                decoding="async"
+                 className='w-full aspect-[3/4] lg:aspect-[3/3.5] object-cover transition duration-[3000ms]
                  ease-out
                   group-hover:opacity-0'/>
             <img src={item.video}
-             className='absolute  h-60 top-0 left-0 w-full opacity-0
+            decoding="async"
+             className='absolute aspect-[3/4] lg:aspect-[3/3/5] object-cover top-0 left-0 w-full opacity-0
            scale-100
            transition-transform duration-[1500ms] ease-out
-           group-hover:opacity-700
+           group-hover:opacity-100
            group-hover:scale-[1.12]'/>
            <div className="absolute top-2 left-2 
                 bg-[#23aa60d6]

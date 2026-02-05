@@ -8,12 +8,18 @@ const HeroPage = () => {
       <picture>
         {/* Mobile Image */}
         <source media="(max-width: 767px)" srcSet={MobileImg} />
+        
 
         {/* Desktop Image */}
         <img
           src={desktopImg}
           alt="Hero Banner"
-          className="w-full"
+          className="w-full h-auto"
+          width="1920"
+  height="700"
+  fetchpriority="high"
+  loading="eager"
+
         />
       </picture>
     </div>
